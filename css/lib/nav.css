@@ -1,0 +1,46 @@
+/* Navigation code */
+nav {
+    text-align: left;
+    padding: 30px;
+    background-color: #1856ca;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+}
+
+nav a:hover {
+    background-color: #1449ac;
+}
+
+nav a:visited {
+    text-decoration: none;
+}
+
+.currentPage {
+    padding: 30px;
+    font-weight: bold;
+}
+
+.navLink {
+    padding: 30px;
+}
+
+@media screen and (max-width: 560px) {
+   .currentPage, .navLink {
+       text-align: center;
+       padding: 1%;
+       float: left;
+       clear: right;
+       position: static;
+    }
+    
+    nav {
+        padding: 12px;
+        font-size: 15px;
+    }
+}

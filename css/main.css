@@ -1,0 +1,161 @@
+/*-------------------
+Style Sheet for {Project name and url}
+
+author: {name}
+email: {email}
+website: {portfolio}
+---------------------*/
+
+/*
+	Vendor imports (libs etc)
+*/
+@import 'vendor/normalize.css';
+@import 'vendor/browserupgrade.css';
+
+/*
+	Our imports
+*/
+@import 'lib/nav.css';
+@import 'lib/card.css';
+
+h1, h2, nav, p, ul, li, label, input, pre {
+    font-family: 'Raleway', sans-serif;
+}
+/* Homepage styling */
+.homeTitle {
+    text-align: center;
+    background-image: url(image/homeBackground.jpg);
+    background-size: cover;
+    padding-bottom: 50%;
+    padding-top: 5%;
+    margin-top: 50px;
+    font-size: 5em;
+    color: black;
+}
+
+.homeHeading {
+    text-align: center;
+    font-size: 3em;
+}
+
+.textIntro {
+    font-size: 250%;
+    margin: 100px;
+    opacity: 1;
+}
+/* Form Styling*/
+.errorMessage {
+    text-align: center;
+    font-size: 30px;
+}
+
+/*Disables fade animation of mailing list description when JavaScript is disabled*/
+.no-js .mailingListDescription {
+    text-align: center;
+    font-size: 50px;
+    opacity: 1;
+}
+.js .mailingListDescription {
+    text-align: center;
+    font-size: 50px;
+    opacity: 0;
+}
+
+.mailInput {
+    text-align: center;
+    padding-bottom: 30px;
+    margin: 1%;
+    opacity: 0;
+}
+
+.mailInput p {
+    font-size: 30px;
+}
+
+.mailInput label {
+    padding: 10px;
+}
+
+.mailInput  input[type="button"] {
+    position: relative;
+    padding: 5px;
+    margin: 2px;
+    background-color: #1856ca;
+    color: white;
+}
+
+.mailInput input[type="button"]:hover {
+    background-color: #1449ac;
+}
+/* Main content styling*/
+.mainBody {
+    margin-top: 100px;
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-bottom: 30px;
+}
+
+.mainBody p, ul {
+    font-size: 125%;
+}
+
+.subheading {
+    background-color: #1856ca;
+    color: white;
+    padding: 20px;
+    clear: left;
+}
+
+.footnotes {
+    background-color: #1856ca;
+    color: white;
+    padding: 20px;
+}
+
+p > a.footerLink {
+    color: white;
+}
+/* typography.html specific styling */
+.placeholder{
+    float: right;
+}
+
+#testLink {
+    color: black;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+table {
+    border: 1px solid black;
+}
+
+td, th {
+    border: 1px solid black;
+    padding: 15px;
+}
+/* Responsive code */
+@media screen and (max-width: 768px) {
+    .homeTitle {
+        font-size: 2em;
+        margin-top: 80px;
+    }
+    
+    .textIntro {
+        margin: 15px;
+        font-size: 150%
+    }
+    .mailInput {
+        padding-bottom: 100px;
+    }
+    
+    .mailInput input[type='button'] {
+        float: none;
+        clear: both;
+        padding: 10px;
+        margin-top: 10px;
+    }
+}
+

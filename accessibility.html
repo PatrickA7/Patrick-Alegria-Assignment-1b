@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Accessibility</title>
+        <meta name="description" content="Prep for HIT226">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/main.css">
+        <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+        <script type="text/javascript" src="js/html5shiv.js"></script>
+        <script type="text/javascript" src="js/respond.src.js"></script>
+    </head>
+    <header>
+        <nav>
+            <a class="navLink" href="index.html">Home</a>
+            <a class="navLink" href="livingstyleguides.html">About</a>
+            <a class="navLink" href="typography.html">Typography</a>
+            <a class="currentPage" href="accessibility.html">Accessibility</a>
+        </nav>
+    </header>
+    <body>
+        <section class="mainBody">
+            <h1>Accessibility</h1>
+            <p> The accessibility of your website is an important attribute in web development. Having as many people having wasy access to your website as possible will increase the amount of people that visit. This section will describe the different ways on how to increase a site's accessibility. </p>
+            <h2 class="subheading">Colour Palette</h2>
+            <p>The choice of colour palette is a very important decision for a web developer to make. Colours are used to convey the mood of a page at a quick glance. The choice of different colour combinations is also important from an accessibility standpoint. It's important to use colours that have high contrast so people with disabilities can read your webpage without much trouble.</p>
+
+            <p>In this section, I will talk about the colour choices I made in designing this webpage and how this takes people with disabilities into consideration.</p>
+            
+            <h2>High Contrast Colours</h2>
+            
+            <p>It's important to have high contrast colours to ensure your content both stands out and is easy to read. This includes people with disabilities such as colour blindness. A way to check if the colours you've chosen are appropriate is to use WebAIM's Colour Contrast Checker.</p>
+            
+            <article class="card">
+                <img src="image/AAApass.JPG" alt="Colour contrast passing the AAA test" class="cardImage">
+                <div class="cardText">
+                    <h2 class="cardTitle">Colour Contrast - AAA Pass</h2>
+                    <p>This combination of colours is suitable for general accessibility as well as for disabled users. </p>
+                </div>
+            </article>
+            <article class="card">
+                <img src="image/AApass.JPG" alt="Colour contrast passing the AA test" class="cardImage">
+                <div class="cardText">
+                    <h2 class="cardTitle">Colour Contrast - AA Pass</h2>
+                    <p>This combination of colours is suitable for general accessibility, however disabled people may have trouble reading.</p>
+                </div>
+            </article>
+            <article class="card">
+                <img src="image/allFail.JPG" alt="Colour contrast failing all tests" class="cardImage">
+                <div class="cardText">
+                    <h2 class="cardTitle">Colour Contrast - No Passes</h2>
+                    <p>This combination of colours is unsuitable for anyone reading the page.</p>
+                </div>
+            </article>
+            <h2 class="subheading">Responsive Web Design</h2>
+            <p>Responsive web design is the process of ensuring your website works on as many devices as possible. Your website should adjust the display if its content based on various screen resolutions and browser options.</p>
+            <p>For example, the cards in the Colour Palette section will stack on top of each other rather than sit side by side when the screen width reaches less than 900px. Try resizing the window to see this effect.</p>
+            <p>Support for older browsers is also an important aspect of responsive web design. Included in this site are two javascript files that add various functions to older versions of Internet Explorer. 'html5shiv.js' adds HTML5 doctype and element support to work on older IE versions, while 'respond.src.js' adds media query functionality. </p>
+        </section>
+    </body>
+    <footer>
+        <div class="footnotes">
+            <p>Created by Patrick Alegria (s290816). All rights go to their respective owners. Home page image hosted on <a class="footerLink" href="https://www.pexels.com/photo/technology-laptop-computer-male-48727/">Pexels</a>, uploaded by Unsplash.com</p>
+        </div>
+    </footer>
+<html
